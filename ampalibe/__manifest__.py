@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "ampalibe",
+    "name": "Ampalibe",
     "summary": """
         An odoo module to manage a Messenger bot from the Ampalibe Framework.
     """,
@@ -10,7 +10,7 @@
     "license": "LGPL-3",
     "support": "rivo2302@gmail.com",
     "category": "Chatbot",
-    "images": ["static/description/ampalibe.webp"],
+    "images": ["static/img/ampalibe.webp"],
     "version": "15.0.1.1.1",
     "price": "0",
     "currency": "USD",

@@ -1,4 +1,3 @@
-An Odoo module to synchronize the Ampalibe Framework with Odoo ERP.
 ==============
 Ampalibe
 ==============
@@ -9,7 +8,7 @@ Ampalibe
 .. |badge2| image:: https://img.shields.io/badge/licence-LGPL--3-blue.png
     :target: http://www.gnu.org/licenses/lgpl-3.0-standalone.html
     :alt: License: LGPL-3
-.. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fweb-lightgray.png?logo=github
+.. |badge3| image:: https://img.shields.io/badge/github-rivo2302%2Fampalibe_odoo-lightgray.png?logo=github
     :target: https://github.com/rivo2302/ampalibe_odoo
     :alt: rivo2302/ampalibe_odoo
 .. |badge4| image:: https://img.shields.io/badge/runbot-Try%20me-875A7B.png
@@ -18,8 +17,13 @@ Ampalibe
 
 |badge1| |badge2| |badge3| |badge4|
 
-This addons is to link Ampalibe framework with Odoo. Then you can use Odoo as a 
-database for your bot, and have your backoffice of your chabtot directly in Odoo Interface.
+- Ampalibe is a lightweight Python framework for building Facebook Messenger bots faster. 
+It provides a new concept, it manages webhooks, processes data sent by Facebook and provides 
+ API Messenger with advanced functions such as payload management, item length, and more.
+- Odoo. ERP Open Source Apps. To Grow Your Business.
+        
+This addons is to link Ampalibe framework with Odoo. Then you can use Odoo as a database for your bot, and
+    have your backoffice of your chabtot directly in Odoo Interface.
 
 **Features**:
 
@@ -71,7 +75,7 @@ This module is maintained by the iTeam-$.
    :alt: iTeam-$ Community Association
    :target: https://iteam-s.mg/
 
-.. |maintainer-rivo2302| image:: https://github.com/rivo.png?size=40px
+.. |maintainer-rivo2302| image:: https://github.com/rivo2302.png?size=40px
     :target: https://github.com/rivo2302
     :alt: rivo2302
 
