@@ -29,7 +29,7 @@ This addons is to link Ampalibe framework with Odoo. Then you can use Odoo as a 
 
 * New navigation with  menu for ampalibe users
 
-  .. image:: https://raw.githubusercontent.com/rivo2302/ampalibe_odoo/15.0/ampalibe/static/img/user_case.gif
+  .. image:: https://raw.githubusercontent.com/rivo2302/ampalibe_odoo/15.0/ampalibe/static/img/user_case.gif?size=500px
 
 **Table of contents**
 
