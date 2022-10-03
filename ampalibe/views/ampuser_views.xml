@@ -1,0 +1,31 @@
+<odoo>
+  <data>
+    <!-- View list -->
+    <record model="ir.ui.view" id="amp_user_list_view">
+      <field name="name">Ampalibe user list view</field>
+      <field name="model">amp.user</field>
+      <field name="arch" type="xml">
+        <tree editable="bottom">
+          <field name="user_id" readonly="1" />
+          <field name="action" />
+          <field name="lang" widget="Selection" />
+          <field name="tmp" />
+          <field name="last_use" />
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="action_amp_user">
+      <field name="name">Ampalibe users</field>
+      <field name="res_model">amp.user</field>
+      <field name="view_mode">tree,kanban</field>
+    </record>
+
+    <!-- Top menu item -->
+    <menuitem name="Ampalibe" id="menu_root" sequence="50" web_icon="ampalibe,static/description/icon.png" />
+
+    <!-- menu categories -->
+    <menuitem name="Users" id="menu_user" parent="menu_root" action="action_amp_user" />
+  </data>
+</odoo>
