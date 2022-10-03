@@ -18,6 +18,8 @@
 
 |badge1| |badge2| |badge3| |badge4|
 
+
+
 - Ampalibe is a lightweight Python framework for building Facebook Messenger bots faster. It provides a new concept, it manages webhooks, processes data sent by Facebook and provides API Messenger with advanced functions such as payload management, item length, and more.
 - Odoo ERP Open Source Apps. To Grow Your Business.
         
@@ -27,7 +29,7 @@ This addons is to link Ampalibe framework with Odoo. Then you can use Odoo as a 
 
 * New navigation with  menu for ampalibe users
 
-  .. image:: https://raw.githubusercontent.com/rivo2302/ampalibe_odoo/15.0/ampalibe/static/img/icon.png
+  .. image:: https://raw.githubusercontent.com/rivo2302/ampalibe_odoo/15.0/ampalibe/static/img/user_case.gif
 
 **Table of contents**
 
