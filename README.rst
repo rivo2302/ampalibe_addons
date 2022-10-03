@@ -71,7 +71,7 @@ This module is maintained by the iTeam-$.
    :alt: iTeam-$ Community Association
    :target: https://iteam-s.mg/
 
-.. |maintainer-rivo2302| image:: https://github.com/Yajo.pn?size=40px
+.. |maintainer-rivo2302| image:: https://github.com/rivo.png?size=40px
     :target: https://github.com/rivo2302
     :alt: rivo2302
 
