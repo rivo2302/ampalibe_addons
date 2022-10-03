@@ -10,7 +10,7 @@
     "license": "LGPL-3",
     "support": "rivo2302@gmail.com",
     "category": "Chatbot",
-    "images": ["static/img/ampalibe.webp"],
+    "images": ["static/img/ampalibe.png"],
     "version": "15.0.1.1.1",
     "price": "0",
     "currency": "USD",

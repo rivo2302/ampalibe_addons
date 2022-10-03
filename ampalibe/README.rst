@@ -2,6 +2,7 @@
 Ampalibe
 ==============
 
+
 .. |badge1| image:: https://img.shields.io/badge/maturity-Production%2FStable-green.png
     :target: https://github.com/rivo2302/ampalibe_odoo
     :alt: Production/Stable
@@ -17,13 +18,15 @@ Ampalibe
 
 |badge1| |badge2| |badge3| |badge4|
 
-- Ampalibe is a lightweight Python framework for building Facebook Messenger bots faster. 
-It provides a new concept, it manages webhooks, processes data sent by Facebook and provides 
+.. image:: https://raw.githubusercontent.com/rivo2302/ampalibe_odoo/15.0/ampalibe/static/img/icon.png
+    :alt : ampalibe
+    :target : https://github.com/iteam-S/Ampalibe
+
+- Ampalibe is a lightweight Python framework for building Facebook Messenger bots faster. It provides a new concept, it manages webhooks, processes data sent by Facebook and provides 
  API Messenger with advanced functions such as payload management, item length, and more.
 - Odoo. ERP Open Source Apps. To Grow Your Business.
         
-This addons is to link Ampalibe framework with Odoo. Then you can use Odoo as a database for your bot, and
-    have your backoffice of your chabtot directly in Odoo Interface.
+This addons is to link Ampalibe framework with Odoo. Then you can use Odoo as a database for your bot, and have your backoffice of your chabtot directly in Odoo Interface.
 
 **Features**:
 
@@ -64,7 +67,7 @@ Authors
 Contributors
 ~~~~~~~~~~~~
 
-* Rivo Lalaina RAJAONARIVONY <rivo2302@gmail.com>
+* 
 
 Maintainers
 ~~~~~~~~~~~
@@ -72,7 +75,7 @@ Maintainers
 This module is maintained by the iTeam-$.
 
 .. image:: https://iteam-s.mg/assets/img/LOGO.png
-   :alt: iTeam-$ Community Association
+   :alt: iTeam-$ Community 
    :target: https://iteam-s.mg/
 
 .. |maintainer-rivo2302| image:: https://github.com/rivo2302.png?size=40px
