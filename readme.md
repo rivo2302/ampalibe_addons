@@ -1,6 +1,5 @@
 <p align="center"> 
-<img height="200" src="https://github.com/rivo2302/ampalibe_odoo/raw/15.0/ampalibe/static/description/icon.png"/><br/>
-<img height="200" src="https://github.com/rivo2302/ampalibe_odoo/raw/15.0/ampalibe/static/img/odoo.png"/>
+<img height="500" src="https://github.com/rivo2302/ampalibe_odoo/raw/15.0/ampalibe/static/img/background.png"/>
 </p>
 <a href='https://github.com/iTeam-S/Ampalibe/#'><img src='https://img.shields.io/badge/maturity-Production%2FStable-green.png'/></a>
 <a href='http://www.gnu.org/licenses/lgpl-3.0-standalone.html'><img src='https://img.shields.io/badge/licence-LGPL--3-blue.png'/></a>
