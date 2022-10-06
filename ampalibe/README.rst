@@ -1,5 +1,5 @@
 
-.. image:: https://raw.githubusercontent.com/rivo2302/ampalibe_odoo/15.0/ampalibe/static/img/background.png?size=400px
+.. image:: https://raw.githubusercontent.com/rivo2302/ampalibe_odoo/15.0/ampalibe/static/img/background.png?size=200px
     :alt: ampalibe
     :target: https://github.com/iteam-S/Ampalibe
 
