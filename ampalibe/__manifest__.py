@@ -20,6 +20,7 @@
     "data": [
         "security/ir.model.access.csv",
         "views/amp_user.xml",
+        "views/res_config.xml",
     ],
     "installable": True,
     "application": True,

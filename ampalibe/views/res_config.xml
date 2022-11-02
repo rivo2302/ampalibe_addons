@@ -1,0 +1,84 @@
+<odoo>
+    <record id="res_config_settings_ampalibe_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.ampalibe</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="42" />
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block" data-string="Ampalibe" string="Ampalibe" data-key="ampalibe">
+                    <div id="fb_page">
+                        <h2>Facebook page</h2>
+                        <div class="row mt16 o_settings_container" name="page_id_setting_container">
+                            <div class="col-12 col-lg-6 o_setting_box" id="page_id">
+                                <div class="o_setting_left_pane" />
+                                <div class="o_setting_right_pane">
+                                    <span class="o_form_label">Page ID</span>
+                                    <a href="https://web.facebook.com" title="Documentation" class="o_doc_link" target="_blank" />
+                                    <div class="text-muted">
+                                        Check the page ID in the URL of your Facebook page.
+                                    </div>
+                                    <div class="content-group">
+                                        <div class="row mt16">
+                                            <label for="page_id" class="col-lg-3 o_light_label" />
+                                            <field name="page_id" />
+                                        </div>
+                                        <div class="mt8">
+                                            <div>
+                                                <a>
+                                                    <i class="fa fa-arrow-right" />
+                                                    Check your facebook page:
+                                                    <br />
+                                                    <span>
+                                                        https://web.facebook.com/
+                                                        <field name="page_id" readonly="1" force_save="1" />
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 o_setting_box">
+                                <div class="o_setting_right_pane">
+                                    <span class="o_form_label">Token</span>
+                                    <a href="https://developers.facebook.com/" title="Documentation" class="o_doc_link" target="_blank" />
+                                    <div class="text-muted">
+                                        Get the token from facebook application.
+                                    </div>
+                                    <div class="content-group">
+                                        <div class="row mt16">
+                                            <label for="token" class="col-lg-3 o_light_label" />
+                                            <field name="token" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="amp_url">
+                        <h2>Ampalibe server</h2>
+                        <div class="row mt16 o_settings_container" name="page_id_setting_container">
+                            <div class="col-12 col-lg-6 o_setting_box" id="page_id">
+                                <div class="o_setting_left_pane" />
+                                <div class="o_setting_right_pane">
+                                    <span class="o_form_label">AMP SERVER</span>
+                                    <a href="https://https://ampalibe.readthedocs.io/" title="Documentation" class="o_doc_link" target="_blank" />
+                                    <div class="text-muted">
+                                        Add https:// to your server url
+                                    </div>
+                                    <div class="content-group">
+                                        <div class="row mt16">
+                                            <label for="amp_url" class="col-lg-3 o_light_label" />
+                                            <field name="amp_url" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
