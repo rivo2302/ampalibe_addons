@@ -12,6 +12,7 @@ class AmpUserModel(models.Model):
         [("fr", "FR"), ("mg", "MG"), ("en", "EN")],
         "Language",
         default="fr",
+        required=True,
     )
     action = fields.Char("Action")
     tmp = fields.Char("Temporary variables")

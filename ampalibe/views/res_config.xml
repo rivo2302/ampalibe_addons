@@ -7,7 +7,7 @@
         <field name="arch" type="xml">
             <xpath expr="//div[hasclass('settings')]" position="inside">
                 <div class="app_settings_block" data-string="Ampalibe" string="Ampalibe" data-key="ampalibe">
-                    <div id="fb_page">
+                    <div id="facebook">
                         <h2>Facebook</h2>
                         <div class="row mt16 o_settings_container" name="page_id_setting_container">
                             <div class="col-12 col-lg-6 o_setting_box" id="page_id">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="amp_url">
+                    <div id="server">
                         <h2>Server</h2>
                         <div class="row mt16 o_settings_container" name="page_id_setting_container">
                             <div class="col-12 col-lg-6 o_setting_box" id="page_id">
@@ -76,6 +76,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div id="personas">
+                        <h2>Personas</h2>
                     </div>
                 </div>
             </xpath>

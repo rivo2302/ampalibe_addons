@@ -11,7 +11,7 @@
             <field name="context">{'module' : 'ampalibe', 'bin_size': False}</field>
         </record>
         <!-- Top menu item -->
-        <menuitem name="Ampalibe" id="menu_root" sequence="50" web_icon="ampalibe,static/description/icon.png" />
+        <menuitem name="Ampalibe" id="menu_root" groups="ampalibe.group_ampalibe_user" sequence="50" web_icon="ampalibe,static/description/icon.png" />
 
         <!-- Users -->
         <menuitem name="Users" id="menu_user" parent="menu_root" action="action_amp_user" />
