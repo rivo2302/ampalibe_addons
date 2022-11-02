@@ -22,10 +22,6 @@
       <field name="view_mode">tree,kanban</field>
     </record>
 
-    <!-- Top menu item -->
-    <menuitem name="Ampalibe" id="menu_root" sequence="50" web_icon="ampalibe,static/description/icon.png" />
 
-    <!-- menu categories -->
-    <menuitem name="Users" id="menu_user" parent="menu_root" action="action_amp_user" />
   </data>
 </odoo>

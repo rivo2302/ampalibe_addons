@@ -1,6 +1,6 @@
 <odoo>
-    <record id="res_config_settings_ampalibe_view_form" model="ir.ui.view">
-        <field name="name">res.config.settings.view.form.inherit.ampalibe</field>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.view.form.inherit</field>
         <field name="model">res.config.settings</field>
         <field name="priority" eval="42" />
         <field name="inherit_id" ref="base.res_config_settings_view_form" />
@@ -8,7 +8,7 @@
             <xpath expr="//div[hasclass('settings')]" position="inside">
                 <div class="app_settings_block" data-string="Ampalibe" string="Ampalibe" data-key="ampalibe">
                     <div id="fb_page">
-                        <h2>Facebook page</h2>
+                        <h2>Facebook</h2>
                         <div class="row mt16 o_settings_container" name="page_id_setting_container">
                             <div class="col-12 col-lg-6 o_setting_box" id="page_id">
                                 <div class="o_setting_left_pane" />
@@ -57,12 +57,12 @@
                         </div>
                     </div>
                     <div id="amp_url">
-                        <h2>Ampalibe server</h2>
+                        <h2>Server</h2>
                         <div class="row mt16 o_settings_container" name="page_id_setting_container">
                             <div class="col-12 col-lg-6 o_setting_box" id="page_id">
                                 <div class="o_setting_left_pane" />
                                 <div class="o_setting_right_pane">
-                                    <span class="o_form_label">AMP SERVER</span>
+                                    <span class="o_form_label">Url</span>
                                     <a href="https://https://ampalibe.readthedocs.io/" title="Documentation" class="o_doc_link" target="_blank" />
                                     <div class="text-muted">
                                         Add https:// to your server url
