@@ -7,7 +7,7 @@
         </record>
         <record id="module_category_ampalibe" model="ir.module.category">
             <field name="name">Ampalibe</field>
-            <field name="parent_id" ref="module_category_ampalibe" />
+            <field name="parent_id" ref="ampalibe.ampalibe_category" />
         </record>
         <record id="group_ampalibe_user" model="res.groups">
             <field name="name">User</field>
