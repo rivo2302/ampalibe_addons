@@ -20,9 +20,8 @@
     "data": [
         "security/groups.xml",
         "security/ir.model.access.csv",
-        "views/res_config.xml",
-        "views/menu_items.xml",
         "views/amp_user.xml",
+        "views/res_config.xml",
     ],
     "installable": True,
     "application": True,

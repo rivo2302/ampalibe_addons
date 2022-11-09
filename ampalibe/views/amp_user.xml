@@ -62,5 +62,11 @@
       <field name="search_view_id" ref="ampalibe_user_view_search" />
       <field name="context">{"search_default_last_24h":1}</field>
     </record>
+    <!-- Top menu item -->
+    <menuitem name="Ampalibe" id="menu_root" groups="ampalibe.group_ampalibe_user" sequence="50" web_icon="ampalibe,static/description/icon.png" />
+
+    <!-- Users -->
+    <menuitem name="Users" id="menu_user" parent="menu_root" action="action_amp_user" />
+
   </data>
 </odoo>
