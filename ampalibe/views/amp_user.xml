@@ -28,7 +28,7 @@
             <h1>
               <field name="name" nolabel="1" readonly="1" />
             </h1>
-            <field name="useri_id" nolabel="1" readonly="1" />
+            <field name="user_id" nolabel="1" readonly="1" />
             <group>
               <field name="action" />
               <field name="last_use" readonly="1" />

@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="base.res_config_settings_view_form" />
         <field name="arch" type="xml">
             <xpath expr="//div[hasclass('settings')]" position="inside">
-                <div class="app_settings_block" data-string="Ampalibe" string="Ampalibe" data-key="ampalibe">
+                <div class="app_settings_block" data-string="Ampalibe" string="Ampalibe" data-key="ampalibe" groups="ampalibe.group_ampalibe_manager">
                     <div id="facebook">
                         <h2>Facebook</h2>
                         <div class="row mt16 o_settings_container" name="page_id_setting_container">
