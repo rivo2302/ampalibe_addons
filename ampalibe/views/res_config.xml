@@ -23,19 +23,6 @@
                                             <label for="page_id" class="col-lg-3 o_light_label" />
                                             <field name="page_id" />
                                         </div>
-                                        <div class="mt8">
-                                            <div>
-                                                <a>
-                                                    <i class="fa fa-arrow-right" />
-                                                    Check your facebook page:
-                                                    <br />
-                                                    <span>
-                                                        https://web.facebook.com/
-                                                        <field name="page_id" readonly="1" force_save="1" />
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

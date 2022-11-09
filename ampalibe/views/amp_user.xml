@@ -6,6 +6,7 @@
       <field name="model">amp.user</field>
       <field name="arch" type="xml">
         <tree>
+          <field name="name" readonly="1" />
           <field name="user_id" readonly="1" />
           <field name="action" />
           <field name="lang" widget="Selection" required="1" />
@@ -25,8 +26,9 @@
           </header>
           <sheet>
             <h1>
-              <field name="user_id" nolabel="1" readonly="1" />
+              <field name="name" nolabel="1" readonly="1" />
             </h1>
+            <field name="useri_id" nolabel="1" readonly="1" />
             <group>
               <field name="action" />
               <field name="last_use" readonly="1" />
@@ -44,6 +46,7 @@
       <field name="model">amp.user</field>
       <field name="arch" type="xml">
         <search string="Search amp user">
+          <field name="name" />
           <field name="user_id" />
           <field name="action" />
           <filter string="Last 24h" name="last_24h" domain="[('last_use', '&gt;=', (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')), ('last_use', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))]" />

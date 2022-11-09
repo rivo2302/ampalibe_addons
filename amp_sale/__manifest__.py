@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "Ampalibe",
+    "name": "Ampalibe sale",
     "summary": """
-        An odoo module to manage a Messenger bot from the Ampalibe Framework.
+        An odoo module to manage a Messenger bot from the Ampalibe Framework with sale module odoo.
     """,
     "author": "Rivo2302",
     "website": "https://github.com/rivo2302/ampalibe_odoo",
@@ -16,14 +16,10 @@
     "currency": "USD",
     "development_status": "Production/Stable",
     "maintainers": ["rivo2302"],
-    "depends": ["base"],
+    "depends": ["base", "ampalibe", "sale"],
     "data": [
-        "security/groups.xml",
-        "security/ir.model.access.csv",
-        "views/res_config.xml",
-        "views/menu_items.xml",
         "views/amp_user.xml",
     ],
     "installable": True,
-    "application": True,
+    "application": False,
 }

@@ -1,12 +1,13 @@
 from odoo import api, fields, models, _
 
 
-class AmpUserModel(models.Model):
+class AmpUser(models.Model):
     _name = "amp.user"
-    _rec_name = "user_id"
+    _rec_name = "name"
     _order = "last_use desc"
     _description = "User management models of Ampalibe framework."
 
+    name = fields.Char("Name")
     user_id = fields.Char("Facebook ID")
     lang = fields.Selection(
         [("fr", "FR"), ("mg", "MG"), ("en", "EN")],

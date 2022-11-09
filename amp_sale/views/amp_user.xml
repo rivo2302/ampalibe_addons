@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record id="amp_user_view_form" model="ir.ui.view">
+            <field name="name">amp.user.view.form.inherit</field>
+            <field name="model">amp.user</field>
+            <field name="inherit_id" ref="ampalibe.amp_user_vieuw_form" />
+            <field name="arch" type="xml">
+                <div name="button_box" position="inside">
+                    <!-- <button class="oe_stat_button" type="object" name="action_view_sale_order" icon="fa-usd">
+                        <field string="Sales" name="sale_order_count" widget="statinfo" />
+                    </button> -->
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>
