@@ -25,9 +25,9 @@
 
 The following features are implemented:
 
-* Models for Ampalibe User
-* View List for Ampalibe User
-* Back office of your chatbot Messenger directly in Odoo Interface
+* New navigation with  menu for ampalibe users
+* Send Message by user to Ampalibe Servers
+* Configure your bot in Odoo (Token, Verify Token, Webhook, etc)
 
 <img height="400" src="https://raw.githubusercontent.com/rivo2302/ampalibe_odoo/15.0/ampalibe/static/img/user_case.gif"/>
 
