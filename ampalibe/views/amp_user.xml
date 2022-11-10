@@ -7,7 +7,7 @@
       <field name="arch" type="xml">
         <tree>
           <header>
-            <button name="open_wizard_message" string="Send message" type="object" class="oe_highlight" />
+            <button name="open_wizard_message" string="Send message" type="object" class="oe_highlight" icon="fa-envelope" />
           </header>
           <field name="name" />
           <field name="user_id" />
@@ -25,7 +25,7 @@
       <field name="arch" type="xml">
         <form string="Ampalibe users">
           <header>
-            <button name="open_wizard_message" string="Send message" type="object" class="oe_highlight" />
+            <button name="open_wizard_message" string="Send message" type="object" class="oe_highlight" icon="fa-envelope" />
           </header>
           <sheet>
             <div class="oe_button_box" name="button_box"></div>

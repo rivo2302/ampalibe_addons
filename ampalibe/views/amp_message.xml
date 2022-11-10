@@ -36,7 +36,7 @@
                                 </h1>
                             </group>
                         </group>
-                        <field name="amp_user_ids" widget="many2many_tags" domain="[('last_use', '&gt;=', (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')), ('last_use', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))]" options="{'no_create': True, 'no_create_edit': True}" string="Users" />
+                        <field name="amp_user_ids" widget="many2many_tags" domain="[('last_use', '&gt;=', (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')), ('last_use', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))]" options="{'no_create': True, 'no_create_edit': True}" />
                         <group>
                             <group>
                                 <field name="message" nolabel="1" placeholder="Type your message here" widget="text" />
@@ -58,7 +58,6 @@
                 <xpath expr="//sheet" position="after">
                     <footer>
                         <button name="send_message" type="object" string="Send message" class="btn-primary" data-hotkey="q" />
-                        <!-- <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z" /> -->
                         <button string="Cancel" class="btn-secondary" name="close" type="object" data-hotkey="q" />
                     </footer>
                 </xpath>

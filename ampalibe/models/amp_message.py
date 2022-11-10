@@ -2,6 +2,10 @@ from odoo import fields, api, models, _
 
 
 class AmpMessage(models.Model):
+    """
+    Message management models of Ampalibe framework.
+    """
+
     _name = "amp.message"
     _description = "Ampalibe Message to send in Messenger"
 

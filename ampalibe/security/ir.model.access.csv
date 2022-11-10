@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_amp_user,amp.user.access,model_amp_user,ampalibe.group_ampalibe_user,1,1,1,0
 access_amp_user,amp.user.access,model_amp_user,ampalibe.group_ampalibe_manager,1,1,1,1
-access_amp_message,amp.message.access,model_amp_message,ampalibe.group_ampalibe_user,1,1,1,1
+access_amp_message,amp.message.access,model_amp_message,ampalibe.group_ampalibe_manager,1,1,1,1
+access_amp_personas,amp.personas.access,model_amp_personas,ampalibe.group_ampalibe_manager,1,1,1,1

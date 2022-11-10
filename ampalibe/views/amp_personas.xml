@@ -1,0 +1,61 @@
+<odoo>
+    <data>
+        <!-- View list -->
+        <record model="ir.ui.view" id="amp_personas_list_view">
+            <field name="name">Ampalibe personas list view</field>
+            <field name="model">amp.personas</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="fid" />
+                    <field name="name" />
+                    <field name="image_url" widget="url" />
+                    <field name="description" />
+                    <field name="default" widget="boolean_toggle" readonly="1" />
+                </tree>
+            </field>
+        </record>
+        <!-- view form -->
+        <record id="amp_personas_vieuw_form" model="ir.ui.view">
+            <field name="name">Ampalibe personas form view</field>
+            <field name="model">amp.personas</field>
+            <field name="arch" type="xml">
+                <form string="Ampalibe personas">
+                    <sheet>
+                        <field name="default" invisible="1" />
+                        <widget name="web_ribbon" title="Default" bg_color="bg-success" attrs="{'invisible': [('default', '=', False)]}" />
+                        <field name="image" widget='image' class="oe_avatar" options='{"zoom": true}' />
+                        <div class="oe_title mb24">
+                            <h1>
+                                <field name="name" />
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="fid" readonly="1" />
+                                <field name="description" widget="text" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="ampalibe_personas_view_search" model="ir.ui.view">
+            <field name="name">ampalibe.personas.view.search</field>
+            <field name="model">amp.personas</field>
+            <field name="arch" type="xml">
+                <search string="Search ampalibe personas">
+                    <field name="name" />
+                    <filter string="Default" name="default" domain="[('default', '=', True)]" />
+                </search>
+            </field>
+        </record>
+        <record id="ampalibe_personas_action" model="ir.actions.act_window">
+            <field name="name">Ampalibe personas</field>
+            <field name="res_model">amp.personas</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="amp_personas_list_view" />
+            <field name="search_view_id" ref="ampalibe_personas_view_search" />
+        </record>
+        <menuitem id="ampalibe_personas_menu" name="Personas" parent="ampalibe.menu_settings" action="ampalibe_personas_action" />
+    </data>
+</odoo>

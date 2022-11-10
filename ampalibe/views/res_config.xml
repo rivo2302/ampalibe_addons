@@ -66,6 +66,27 @@
                     </div>
                     <div id="personas">
                         <h2>Personas</h2>
+                        <div class="row mt16 o_settings_container" name="page_id_setting_container">
+                            <div class="col-12 col-lg-6 o_setting_box" id="page_id">
+                                <div class="o_setting_left_pane" />
+                                <div class="o_setting_right_pane">
+                                    <span class="o_form_label">Main personas</span>
+                                    <a href="https://https://ampalibe.readthedocs.io/" title="Documentation" class="o_doc_link" target="_blank" />
+                                    <div class="text-muted">
+                                        The main personas for your bot messenger
+                                    </div>
+                                    <div class="content-group">
+                                        <div class="row mt16">
+                                            <label for="main_personas" class="col-lg-3 o_light_label" />
+                                            <field name="main_personas" options="{'no_create': True, 'no_create_edit': True}" />
+                                        </div>
+                                        <div class="row mt16 float-right">
+                                            <button name="action_sync_personas" type="object" string="Synchronise" class="btn btn-primary" icon="fa-refresh" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </xpath>

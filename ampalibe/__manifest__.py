@@ -4,7 +4,7 @@
     "summary": """
         An odoo module to manage a Messenger bot from the Ampalibe Framework.
     """,
-    "author": "Rivo2302",
+    "author": "rivo2302",
     "website": "https://github.com/rivo2302/ampalibe_odoo",
     "live_test_url": "https://www.youtube.com/watch?v=DOF95xoPXq0",
     "license": "LGPL-3",
@@ -21,6 +21,7 @@
         "security/groups.xml",
         "security/ir.model.access.csv",
         "views/amp_user.xml",
+        "views/amp_personas.xml",
         "views/res_config.xml",
         "views/amp_message.xml",
     ],
