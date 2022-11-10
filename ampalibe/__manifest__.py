@@ -22,6 +22,7 @@
         "security/ir.model.access.csv",
         "views/amp_user.xml",
         "views/res_config.xml",
+        "views/amp_message.xml",
     ],
     "installable": True,
     "application": True,

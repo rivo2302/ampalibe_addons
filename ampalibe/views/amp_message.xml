@@ -1,0 +1,104 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="amp_messsage_list_view">
+            <field name="name">Ampalibe message list view</field>
+            <field name="model">amp.message</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="amp_user_ids" widget="many2many_tags" />
+                    <field name="create_date" />
+                    <field name="status" decoration-success="status == 'sent'" decoration-info="status == 'draft' or status == 'loading'" decoration-danger="status == 'error' " widget="badge" />
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="amp_message_form_view">
+            <field name="name">ampalibe.send.message.form.view</field>
+            <field name="model">amp.message</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Send message Ampalibe">
+                    <header>
+                        <field name="status" widget="statusbar" statusbar_visible="draft,loading,sent,error" />
+                    </header>
+                    <sheet>
+                        <div class="alert alert-info text-center o_form_header" role="alert">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                            <p>
+                                <strong>Info</strong>
+                                You cannot edit a message that has been create.
+                            </p>
+                        </div>
+                        <group>
+                            <group>
+                                <h1>
+                                    <field name="name" nolabel="1" placeholder="Name" />
+                                </h1>
+                            </group>
+                        </group>
+                        <field name="amp_user_ids" widget="many2many_tags" domain="[('last_use', '&gt;=', (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')), ('last_use', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))]" options="{'no_create': True, 'no_create_edit': True}" string="Users" />
+                        <group>
+                            <group>
+                                <field name="message" nolabel="1" placeholder="Type your message here" widget="text" />
+                            </group>
+                            <group>
+                                <field name="attachment_ids" widget="many2many_binary" nolabel="1" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="send_message_wizard" model="ir.ui.view">
+            <field name="name">ampalibe.message.form.inherit</field>
+            <field name="model">amp.message</field>
+            <field name="inherit_id" ref="ampalibe.amp_message_form_view" />
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet" position="after">
+                    <footer>
+                        <button name="send_message" type="object" string="Send message" class="btn-primary" data-hotkey="q" />
+                        <!-- <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z" /> -->
+                        <button string="Cancel" class="btn-secondary" name="close" type="object" data-hotkey="q" />
+                    </footer>
+                </xpath>
+                <xpath expr="//sheet/div[@role='alert']" position="replace">
+                    <div class="alert alert-warning text-center o_form_header" role="alert">
+                        <a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+                        <p>
+                            <strong>Warning!</strong>
+                            You can send a message to users who have last chat with the bot in within the last 24 hours.
+                        </p>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+        <record id="ampalibe_message_view_search" model="ir.ui.view">
+            <field name="name">ampalibe.message.view.search</field>
+            <field name="model">amp.message</field>
+            <field name="arch" type="xml">
+                <search string="Search ampalibe message">
+                    <field name="name" />
+                    <filter string="Sent" name="sent" domain="[('status', '=', 'sent')]" />
+                    <filter string="Not send" name="not_sent" domain="[('status', '=', 'error')]" />
+                    <group expand="0" string="Group By">
+                        <filter string="Status" name="status" context="{'group_by':'status'}" />
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="action_ampalibe_message" model="ir.actions.act_window">
+            <field name="name">Ampalibe messages</field>
+            <field name="res_model">amp.message</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_ids" eval="[
+                    (5, 0, 0), 
+                    (0, 0, {'view_mode': 'tree', 'view_id': ref('amp_messsage_list_view')}),
+                    (0, 0, {'view_mode': 'form', 'view_id': ref('amp_message_form_view')})]"
+            />
+            <field name="search_view_id" ref="ampalibe_message_view_search" />
+            <field name="context">{"search_default_status":1}</field>
+        </record>
+        <menuitem name="Message ampalibe" id="settings_message" parent="ampalibe.menu_settings" action="action_ampalibe_message" />
+    </data>
+</odoo>

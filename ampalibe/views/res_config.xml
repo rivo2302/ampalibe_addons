@@ -82,6 +82,6 @@
     </record>
 
     <!-- settings -->
-    <menuitem name="Settings" id="menu_settings" parent="menu_root" groups="ampalibe.group_ampalibe_manager" />
+    <menuitem name="Configuration" id="menu_settings" parent="menu_root" groups="ampalibe.group_ampalibe_manager" />
     <menuitem name="Settings" id="menu_settings_general" parent="menu_settings" action="action_ampalibe_config_settings" />
 </odoo>

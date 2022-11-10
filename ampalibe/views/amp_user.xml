@@ -6,12 +6,15 @@
       <field name="model">amp.user</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name" readonly="1" />
-          <field name="user_id" readonly="1" />
+          <header>
+            <button name="open_wizard_message" string="Send message" type="object" class="oe_highlight" />
+          </header>
+          <field name="name" />
+          <field name="user_id" />
           <field name="action" />
-          <field name="lang" widget="Selection" required="1" />
+          <field name="lang" widget="Selection" />
           <field name="tmp" />
-          <field name="last_use" readonly="1" />
+          <field name="last_use" />
         </tree>
       </field>
     </record>
@@ -20,13 +23,14 @@
       <field name="name">Ampalibe user form view</field>
       <field name="model">amp.user</field>
       <field name="arch" type="xml">
-        <form string="">
+        <form string="Ampalibe users">
           <header>
-            <div class="oe_button_box" name="button_box"></div>
+            <button name="open_wizard_message" string="Send message" type="object" class="oe_highlight" />
           </header>
           <sheet>
+            <div class="oe_button_box" name="button_box"></div>
             <h1>
-              <field name="name" nolabel="1" readonly="1" />
+              <field name="name" nolabel="1" readonly="0" />
             </h1>
             <field name="user_id" nolabel="1" readonly="1" />
             <group>
@@ -45,11 +49,11 @@
       <field name="name">ampalibe.user.view.search</field>
       <field name="model">amp.user</field>
       <field name="arch" type="xml">
-        <search string="Search amp user">
+        <search string="Search ampalibe user">
           <field name="name" />
           <field name="user_id" />
           <field name="action" />
-          <filter string="Last 24h" name="last_24h" domain="[('last_use', '&gt;=', (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')), ('last_use', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))]" />
+          <filter string="Last 24 hours" name="last_24h" domain="[('last_use', '&gt;=', (datetime.datetime.now() - datetime.timedelta(days=1)).strftime('%Y-%m-%d %H:%M:%S')), ('last_use', '&lt;=', datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))]" />
           <group expand="0" string="Group By"></group>
         </search>
       </field>
@@ -67,6 +71,5 @@
 
     <!-- Users -->
     <menuitem name="Users" id="menu_user" parent="menu_root" action="action_amp_user" />
-
   </data>
 </odoo>
