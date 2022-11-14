@@ -80,8 +80,17 @@
                                             <label for="main_personas" class="col-lg-3 o_light_label" />
                                             <field name="main_personas" options="{'no_create': True, 'no_create_edit': True}" />
                                         </div>
-                                        <div class="row mt16 float-right">
-                                            <button name="action_sync_personas" type="object" string="Synchronise" class="btn btn-primary" icon="fa-refresh" />
+
+                                        <div class="row mt16 align-center">
+                                            <div class="alert alert-info text-center o_form_header" role="alert">
+                                                <p>
+                                                    <strong>Info</strong>
+                                                    Please check that you have the rigth accces before synschronise
+                                                    the personas.
+                                                </p>
+                                                <button name="action_sync_personas" type="object" string="Synchronise" class="btn btn-primary text-center" icon="fa-refresh" />
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>

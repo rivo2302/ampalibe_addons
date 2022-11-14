@@ -20,6 +20,9 @@
             <field name="model">amp.personas</field>
             <field name="arch" type="xml">
                 <form string="Ampalibe personas">
+                    <header>
+                        <button name="synchronise" string="Synchronise" type="object" class="oe_highlight" icon="fa-refresh" />
+                    </header>
                     <sheet>
                         <field name="default" invisible="1" />
                         <widget name="web_ribbon" title="Default" bg_color="bg-success" attrs="{'invisible': [('default', '=', False)]}" />

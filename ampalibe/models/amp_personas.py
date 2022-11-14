@@ -40,3 +40,6 @@ class AmpPersonas(models.Model):
                 "next": {"type": "ir.actions.act_window_close"},
             },
         }
+
+    def synchronise(self):
+        print("teste")
